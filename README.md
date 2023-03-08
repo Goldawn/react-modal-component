@@ -1,24 +1,9 @@
-# React modal
-## Get started
+# Workflow 
 
-```javascript
-// Usecase 
+```bash
+npm login
+npx create-react-app my-personal-button
+npm install --save-dev @babel/core @babel/cli @babel/preset-env 
+npm install -save @babel/polyfill
 
-import Modal from 'react-modal-component'
-
-const App = () => {
-  const [isOpen, setIsOpen] = React.useState(false)
-
-  const handleOpen = () => setIsOpen(true)
-  const handleClose = () => setIsOpen(false)
-  
-  return (
-    <div>
-      <button onClick={handleOpen}>Open Modal</button>
-      <Modal isOpen={isOpen} handleClose={handleClose}>
-        <h1>Modal Content</h1>
-      </Modal>
-    </div>
-  )
-}
 ```
