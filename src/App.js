@@ -1,6 +1,6 @@
 import './App.css'
 import { useState } from 'react'
-import { Modal } from 'my-personal-button'
+import { Modal } from './lib'
 // import Modal from '../dist/index'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={handleOpen}>Open Modal</button>
-      <Modal isOpen={isOpen} handleClose={handleClose}>
+      <Modal isOpen={isOpen} handleClose={handleClose} allowEscape>
         <h1>Modal Content</h1>
       </Modal>
     </div>
